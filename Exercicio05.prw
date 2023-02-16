@@ -8,7 +8,7 @@ User Function Conversor()
     local aOpcoes    := {"Dolar", "Real"}
     local nResposta  := 0
 
-    // Aqui é exibida uma caixa de opções ao usuário, solicitando o que o mesmo deseja converter
+    // Aqui é exibida uma caixa de opções ao usuário, solicitando o que o mesmo deseja converter.
     nResposta := Aviso("Conversor", "Olá! Escolha abaixo o que deseja converter!", aOpcoes, 1)
 
     // Se o usuário selecionar "Dólar", o programa solicita a cotação atual e pergunta quantos reais o mesmo tem.

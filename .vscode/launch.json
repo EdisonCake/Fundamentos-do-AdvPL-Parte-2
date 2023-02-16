@@ -27,7 +27,31 @@
 		},
 		{
 			"label": "u_NumInt"
+		},
+		{
+			"label": "u_Poker"
+		},
+		{
+			"label": "u_zLogin"
+		},
+		{
+			"label": "u_DiaMes"
+		},
+		{
+			"label": "u_MaiorMenor"
+		},
+		{
+			"label": "u_NovoMaiMen"
+		},
+		{
+			"label": "u_Aleatorio"
+		},
+		{
+			"label": "u_Multi3"
+		},
+		{
+			"label": "u_MultiN"
 		}
 	],
-	"lastProgramExecuted": "u_NumInt"
+	"lastProgramExecuted": "u_MultiN"
 }
