@@ -1,5 +1,8 @@
 #INCLUDE 'TOTVS.CH'
 
+#DEFINE cUser "edisoncake"
+#DEFINE cSenha "BoloBolo"
+
 User Function zLogin()
     Local aArea := GetArea()
     Local oGrpLog
@@ -22,6 +25,7 @@ User Function zLogin()
     DEFINE MSDIALOG oDlgPvt TITLE "Login" FROM 000, 000  TO nJanAltu, nJanLarg COLORS 0, 16777215 PIXEL
         //Grupo de Login
         @ 003, 001     GROUP oGrpLog TO (nJanAltu/2)-1, (nJanLarg/2)-3         PROMPT "Login: "     OF oDlgPvt COLOR 0, 16777215 PIXEL
+
             //Label e Get de Usuário
             @ 013, 006   SAY   oSayUsr PROMPT "Usuário:"        SIZE 030, 007 OF oDlgPvt                    PIXEL
             @ 020, 006   MSGET oGetUsr VAR    cGetUsr           SIZE (nJanLarg/2)-12, 007 OF oDlgPvt COLORS 0, 16777215 PIXEL
@@ -55,9 +59,8 @@ Static Function fVldUsr()
     // Local cCodAux := ""
       
     //Pega o código do usuário
-    RPCClearEnv()
-    If cUsrAux == "edisoncake" .and. cPswAux == "BoloDeCake"
-        // cCodAux := RetCodUsr()
+    
+    If cUsrAux == cUser .and. cPswAux == cSenha
         lRetorno := .T.
         
      //Senão atualiza o erro e retorna para a rotina

@@ -51,7 +51,28 @@
 		},
 		{
 			"label": "u_MultiN"
+		},
+		{
+			"label": "u_SomaParImp"
+		},
+		{
+			"label": "u_Fibo"
+		},
+		{
+			"label": "u_Fibo2"
+		},
+		{
+			"label": "u_SignUp"
+		},
+		{
+			"label": "u_Cadastro"
+		},
+		{
+			"label": "u_Game01"
+		},
+		{
+			"label": "u_Game02"
 		}
 	],
-	"lastProgramExecuted": "u_MultiN"
+	"lastProgramExecuted": "u_Game02"
 }
