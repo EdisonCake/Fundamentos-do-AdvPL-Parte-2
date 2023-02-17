@@ -125,7 +125,7 @@ Static Function fVldUsr()
         
     // Senão atualiza o erro e retorna para a rotina
     Else
-        cGetErr := "Usuário e/ou senha inválidos!"
+        cGetErr := "Usuário inválido."
         oGetErr:Refresh()
     EndIf
       
