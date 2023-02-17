@@ -72,7 +72,13 @@
 		},
 		{
 			"label": "u_Game02"
+		},
+		{
+			"label": "u_zCadastro"
+		},
+		{
+			"label": "u_NumeroInt"
 		}
 	],
-	"lastProgramExecuted": "u_Game02"
+	"lastProgramExecuted": "u_SomaParImp"
 }

@@ -1,28 +1,28 @@
 #INCLUDE 'TOTVS.CH'
 
 User Function Viagem()
-    // Declaração de variáveis
+    // Declara??o de vari?veis
     local nTempo    := 0
     local nVel      := 0
     local nDist     := 0
     local nLitros   := 0
     local nLitUs    := 0
 
-    // Aqui é solicitado ao usuário as informações da viagem e do veículo a ser utilizado.
-    nTempo  := val(fwinputbox("Digite o tempo que será gasto na viagem (horas):"))
-    nVel    := val(fwinputbox("Digite a velocidade média do veículo (km/h):"))
+    // Aqui ? solicitado ao usu?rio as informa??es da viagem e do ve?culo a ser utilizado.
+    nTempo  := val(fwinputbox("Digite o tempo que ser? gasto na viagem (horas):"))
+    nVel    := val(fwinputbox("Digite a velocidade m?dia do ve?culo (km/h):"))
     nLitros := val(fwinputbox("Por fim, digite quantos Km/l seu carro faz:"))
 
-    // Aqui é feito o cálculo da distância e da quantidade de litros a ser utilizado na viagem.
+    // Aqui ? feito o c?lculo da dist?ncia e da quantidade de litros a ser utilizado na viagem.
     nDist  := nTempo * nVel
     nLitUs := nDist / nLitros
 
-    // E por fim, as informações são exibidas ao usuário.
-    FwAlertInfo("Ficha técnica:" + CRLF + CRLF +;
+    // E por fim, as informa??es s?o exibidas ao usu?rio.
+    FwAlertInfo("Ficha t?cnica:" + CRLF + CRLF +;
                 "Tempo de viagem.....................: " + cvaltochar(nTempo) + CRLF +;
-                "Velocidade média.....................: " + cvaltochar(nVel) + " KM/H" + CRLF +;
+                "Velocidade m?dia.....................: " + cvaltochar(nVel) + " KM/H" + CRLF +;
                 replicate("=", 37) + CRLF +;
-                "Distância a ser percorrida:.........: " + cvaltochar(ndist) + " KM" + CRLF +;
-                "Litros a serem utilizados............: " + cvaltochar(noround(nLitUs, 2)),"Informações")
+                "Dist?ncia a ser percorrida:.........: " + cvaltochar(ndist) + " KM" + CRLF +;
+                "Litros a serem utilizados............: " + cvaltochar(noround(nLitUs, 2)),"Informa??es")
 
 Return 

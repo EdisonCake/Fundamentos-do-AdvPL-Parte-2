@@ -16,7 +16,7 @@ User Function SomaParImp()
 
     // Se for escolhido par, é somado na variável de soma.
     if nResp = 1
-        For nCount := 1 to nLimite
+        For nCount := 1 to (nLimite * 2)
             if nCount % 2 = 0
                 nSoma += nCount
             endif
@@ -27,7 +27,7 @@ User Function SomaParImp()
 
     // Senão, é somado apenas os ímpares.
     elseif nResp = 2
-        For nCount := 1 to nLimite
+        For nCount := 1 to (nLimite * 2) step 2
             if nCount % 2 != 0
                 nSoma += nCount
             endif

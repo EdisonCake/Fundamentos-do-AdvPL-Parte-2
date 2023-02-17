@@ -78,5 +78,5 @@ User Function Cadastro()
 
     // Por fim, é exibida uma mensagem de sucesso no cadastro.
     MsgInfo("Cadastro efetuado com sucesso!", "SignUp bem sucedido!")
-    Return Nil
+Return Nil
     

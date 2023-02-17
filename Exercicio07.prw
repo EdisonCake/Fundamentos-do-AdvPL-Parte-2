@@ -1,16 +1,16 @@
 #INCLUDE 'TOTVS.CH'
 
 User Function Poker()
-    // Declaração de variáveis.
+    // Declara??o de vari?veis.
     local nHoraIni := 0
     local nHoraFim := 0
     local nDuracao := 0
 
-    // Aqui é solicitado ao usuário os horários do início e do fim do jogo.
-    nHoraIni := val(fwinputbox("Digite o horário de início do jogo:"))
-    nHoraFim := val(fwinputbox("Digite o horário que o mesmo terminou:"))
+    // Aqui ? solicitado ao usu?rio os hor?rios do in?cio e do fim do jogo.
+    nHoraIni := val(fwinputbox("Digite o hor?rio de in?cio do jogo:"))
+    nHoraFim := val(fwinputbox("Digite o hor?rio que o mesmo terminou:"))
 
-    // Nessa estrutura condicional é calculada as horas com base nos critérios informados e é em seguida exibido o cálculo ao usuário.
+    // Nessa estrutura condicional ? calculada as horas com base nos crit?rios informados e ? em seguida exibido o c?lculo ao usu?rio.
     if nHoraIni >= nHoraFim
         nDuracao := (nHoraFim - nHoraIni) + 24
 

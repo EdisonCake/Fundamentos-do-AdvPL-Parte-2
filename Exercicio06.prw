@@ -16,10 +16,8 @@ User Function NumeroInt()
 
         // Se o número for divisível por 2 ou por 3 será adicionado um comentário na variável de concatenação.
         // Senão, será concatenado que o número não é divisível nem por um e nem por outro.
-        if (nNumero % 2) = 0
-            cDiv += "O número " + cvaltochar(nNumero) + " é divisível por 2." + CRLF
-        elseif (nNumero % 3) = 0
-            cDiv += "O número " + cvaltochar(nNumero) + " é divisível por 3." + CRLF
+        if (nNumero % 2) = 0 .and. (nNumero % 3) = 0
+            cDiv += "O número " + cvaltochar(nNumero) + " é divisível por 2 e por 3." + CRLF
         else
             cDiv += "O número " + cvaltochar(nNumero) + " não é divisível nem por 2, nem por 3." + CRLF
         endif
