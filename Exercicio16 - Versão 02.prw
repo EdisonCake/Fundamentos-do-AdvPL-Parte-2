@@ -57,6 +57,7 @@ User Function zCadastro()
     RestArea(aArea)
 Return lRetorno
 
+// Função de validação de usuário e senha
 Static Function fVldUsr()
     Local cUsrAux   := Alltrim(cGetUsr)
     Local cPswAux   := Alltrim(cGetPsw)
@@ -67,13 +68,17 @@ Static Function fVldUsr()
     Local nUpp      := 0
     Local cCheck    := ""
 
+    // Se o usuário atende aos requisitos, ele entra em um novo bloco condicional.
     if len(cUsrAux) > 6
         
+        // Se a senha atende aos requisitos, entra em um novo bloco condicional.
         if len(cPswAux) > 6
 
+            // Aqui, será verificado se a senha possui a quantidade mínima de caracteres especiais solicitados.
             for nCount := 1 to len(cPswAux)
                 cCheck := asc(substr(cPswAux,nCount))
-            
+
+                // Aqui, vai atribuir ao contador as validações.
                 if cCheck >= 48 .and. cCheck <= 57
                     nNum++
                 elseif cCheck >= 65 .and. cCheck <= 90
@@ -92,9 +97,12 @@ Static Function fVldUsr()
             // Se as validações obtiverem menos do que o esperado, a senha não é aceita pelo algoritmo.
             if (nNum > 0) .and. (nUpp > 0) .and. (nSimb > 0)
 
+                // Se a confirmação da senha estiver em branco, é solicitado ao usuário que o mesmo confirme-a.
                 if cPswAux2 == " "
                     cGetErr := "Confirme a senha!"
                     oGetErr:Refresh()
+                
+                // Aqui, é validado se ambas as senhas coincidem. Senão, é informado ao usuário.
                 else
                     if cPswAux == cPswAux2
                        lRetorno := .T. 

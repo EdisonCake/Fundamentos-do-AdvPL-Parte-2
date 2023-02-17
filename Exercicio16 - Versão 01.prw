@@ -1,6 +1,6 @@
 #INCLUDE 'TOTVS.CH'
 
-User Function Cadastro()
+User Function Cad01()
     // Declaração de variáveis
     local cUsername := ""
     local cPass := ""
