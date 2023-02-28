@@ -23,16 +23,16 @@ User Function Game02()
                 MsgInfo("Você acertou de primeira...", "Tá usando cheat!")
                 lGame := .f.
             elseif nTry > 0 .and. nTry <= 5
-                MsgInfo("Você é muito bom, acertou em " + cvaltochar(nTry) + " tentativas!", "Muito bom!")
+                MsgInfo("Ok, aceitável... Demorou só " + cvaltochar(nTry) + " tentativas!", "Muito bom!")
                 lGame := .f.
             elseif nTry > 5 .and. nTry <= 9
-                MsgInfo("Você é bom, acertou em " + cvaltochar(nTry) + " tentativas!", "Ok!")
+                MsgInfo("Kkk, podia ser melhor hein... levou " + cvaltochar(nTry) + " tentativas!", "Ok!")
                 lGame := .f.
             elseif nTry > 9 .and. nTry <= 13
-                MsgInfo("Você é mediano, acertou em " + cvaltochar(nTry) + " tentativas!", "Melhore na próxima!")
+                MsgInfo("Nem tão bom, mas com certeza ruim. Levou " + cvaltochar(nTry) + " tentativas!", "Melhore na próxima!")
                 lGame := .f.
             elseif nTry > 13
-                MsgInfo("Você é muito fraco, acertou em " + cvaltochar(nTry) + " tentativas!", "Devia ter desistido...")
+                MsgInfo("KKKKKKKKKKKK DEMOROU " + cvaltochar(nTry) + " TENTATIVAS!", "Devia ter desistido...")
                 lGame := .f.
             endif
         else
